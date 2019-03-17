@@ -11,7 +11,7 @@ public interface IProfesorDao extends JpaRepository<Profesor, Long> {
 
 	public Profesor findByEmail(String email);
 	public Profesor findByEmailAndPassword(String email, String password);
-	public Optional<Profesor> findById(Long id);
+	public Optional<Profesor> findById(long id);
 	
 	@Query("select p from Profesor p where p.id =?1")
 	public Profesor findByIdSQL(long id);

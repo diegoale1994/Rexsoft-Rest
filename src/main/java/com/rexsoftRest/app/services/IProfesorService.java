@@ -6,7 +6,6 @@ import java.util.Optional;
 import com.rexsoftRest.app.entity.Profesor;
 
 public interface IProfesorService {
-
 	public List<Profesor> findAll();
 	public Profesor findProfesor(Profesor profesor);
 	public Profesor checkProfesorLogin(Profesor profesor);
@@ -16,4 +15,5 @@ public interface IProfesorService {
 	public void deleteProfesor(Long Id);
 	public Profesor ProfesorfindById(Long id);
 	public Profesor ProfesorfindByIdSQL(Long id);
+	public void save(Profesor profesor);
 }
